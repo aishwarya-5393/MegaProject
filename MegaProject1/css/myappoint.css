@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  color: black;
+}
+
+p {
+  font-size: 14px;
+}
+
+.logo {
+  position: fixed;
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: left;
+  padding: 15px 420px 15px 60px;
+  top: 0;
+  z-index: 2;
+  font-weight: 700;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  background-color: #f3e99f;
+  z-index: 1;
+  padding-top: 70px;
+}
+
+.sidebar-menu {
+  width: 100%;
+  text-align: center;
+  padding: 10px 5px;
+  color: black;
+}
+
+.sidebar-menu > a {
+  text-decoration: none;
+  font-size: 0.7rem;
+  line-height: 1.5;
+  color: black;
+}
+
+.sidebar-menu:hover {
+  border-right: 2px solid;
+  color: #e9cf0e;
+}
+
+.sidebar-menu:hover > a {
+  color: #e9cf0e;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#tab {
+  padding: 5% 10%;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 900;
+}

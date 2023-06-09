@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  color: black;
+}
+
+p {
+  font-size: 14px;
+}
+
+.logo {
+  position: fixed;
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: left;
+  padding: 15px 420px 15px 60px;
+  top: 0;
+  z-index: 2;
+  font-weight: 700;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  background-color: #f3e99f;
+  z-index: 1;
+  padding-top: 70px;
+}
+
+.sidebar-menu {
+  width: 100%;
+  text-align: center;
+  padding: 10px 5px;
+  color: black;
+}
+
+.sidebar-menu > a {
+  text-decoration: none;
+  font-size: 0.7rem;
+  line-height: 1.5;
+  color: black;
+}
+
+.sidebar-menu:hover {
+  border-right: 2px solid;
+  color: #e9cf0e;
+}
+
+.sidebar-menu:hover > a {
+  color: #e9cf0e;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#tab {
+  padding: 30% 10%;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.dashboard {
+  width: 85vmin;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 50%;
+  overflow: hidden;
+}
+
+.dashboard-banner {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  margin-top: 4rem;
+  padding: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  animation: slide 10s infinite;
+}
+
+.dashboard-banner > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border-radius: 30px; */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  55% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-200%);
+  }
+  80% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 0.2fr));
+  gap: 20px;
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.card {
+  background-color: #f3e99f;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.detail {
+  padding: 10px;
+}
+
+.input {
+  width: 400px;
+  height: 40px;
+}
+
+label {
+  width: 100%;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.btn {
+  width: 400px;
+}
+
+.popup {
+  width: 400px;
+  background: #f3e99f;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+  visibility: visible;
+  top: 280%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img {
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+.popup button {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background-color: black;
+  color: #fff;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}

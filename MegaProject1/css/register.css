@@ -1,0 +1,35 @@
+#register {
+  background-color: #f3e99f;
+  text-align: center;
+  padding: 7% 20%;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 700;
+  padding: 5%;
+}
+
+.input {
+  width: 400px;
+  height: 40px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: medium;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  font-size: medium;
+}
